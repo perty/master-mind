@@ -1,11 +1,12 @@
 {
   "private": true,
   "type": "module",
-  "name": "example-minimal",
+  "name": "master-mind",
   "scripts": {
     "postinstall": "elm-tooling install",
     "start": "elm-watch hot",
-    "build": "elm-watch make --optimize"
+    "build": "elm-watch make --optimize",
+    "test": "elm-test-rs"
   },
   "devDependencies": {
     "elm-tooling": "^1.10.0",

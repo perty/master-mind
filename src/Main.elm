@@ -1,4 +1,4 @@
-module Main exposing (main)
+module Main exposing (main, makeCombination, Combination, Peg(..), hints)
 
 import Array exposing (Array)
 import Browser
@@ -28,9 +28,9 @@ type Peg
     | White
 
 
-type CorrectionPeg
-    = BlackCorrection
-    | WhiteCorrection
+type Hint
+    = ColorAndPlace
+    | ColorOnly
 
 
 main : Program () Model Msg
@@ -70,3 +70,7 @@ view model =
 makeCombination : Peg -> Peg -> Peg -> Peg -> Combination
 makeCombination peg1 peg2 peg3 peg4 =
     Array.fromList [ peg1, peg2, peg3, peg4 ]
+
+hints: Combination -> Combination -> List Hint
+hints correct guess =
+    []
