@@ -13,3 +13,15 @@ Given the information from the hints, the opponent can make another guess and ev
 guess or run out of possible guesses, 10. In the latter case, the opponent has lost.
 
 A nostaligic look at the game in [Wired magazine](https://www.wired.com/2012/06/late-tothe-game-mastermind/).
+
+## Coding exercise
+
+### Version 1
+
+In this version, the application sets up the combination and the user try guess it. So the program's job
+is to randomly pick 4 colors, same or different, and then give the user hints for their guessing.
+
+### Version 2
+
+The second veresion has the computer doing the guessing. It can cheat of course, but that would be wrong.
+
