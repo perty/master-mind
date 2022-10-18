@@ -1,4 +1,4 @@
-module Main exposing (main, makeCombination, Combination, Peg(..), hints)
+module Main exposing (main, makeCombination, Combination, Peg(..), hints, Hint(..))
 
 import Array exposing (Array)
 import Browser
