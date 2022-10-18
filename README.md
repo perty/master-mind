@@ -11,3 +11,5 @@ a white hint is for correct color but wrong place.
 
 Given the information from the hints, the opponent can make another guess and eventually do a completely correct 
 guess or run out of possible guesses, 10. In the latter case, the opponent has lost.
+
+A nostaligic look at the game in [Wired magazine](https://www.wired.com/2012/06/late-tothe-game-mastermind/).
