@@ -6,67 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8">
     <style>
+        .container {
+            color: wheat;
+            background-image: url(wood.jpg);
+            border-radius: 10px;
+            max-width: 350px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+        }
+
         .board {
-            border-style: solid;
-            border-color: burlywood;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 330px;
+            margin: auto;
         }
 
         .correct-box {
             border-style: solid;
+            border-color: burlywood;
             border-radius: 10px;
-            width: 120px;
+            width: 190px;
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-right: 20px;
         }
 
         .guess-area {
             display: flex;
             flex-direction: column;
+            margin-bottom: 5px;
         }
 
         .guess-row {
             border: solid;
+            border-color: burlywood;
+            border-radius: 5px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 5px;
         }
 
         .guess-row-number {
-            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            width: 30px;
         }
 
         .guess {
-            border-style: solid;
-            border-color: rgb(255, 234, 0);
+            border-style: outset;
+            border-color: burlywood;
             border-radius: 20px;
-            width: 45px;
-            height: 45px;
+            border-width: thick;
+            width: 35px;
+            height: 35px;
+            background-color: lightgray;
         }
 
         .hint-box {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            border-style: solid;
-            border-radius: 10px;
-            width: 100px;
+            width: 50px;
         }
 
         .hint {
-            border-style: solid;
+            border-style: outset;
+            border-color: burlywood;
             border-radius: 5px;
-            width: 20px;
-            height: 20px;
-            margin: 10px;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background-color: lightgray;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>Master Mind</h1>
+    <div class="container">
+        <p class="title">Master Mind</p>
         <div class="board">
             <div class="correct-box">
                 <p>Guess this</p>
@@ -85,8 +111,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">9</div>
                     <div class="guess"> </div>
@@ -100,8 +124,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">8</div>
                     <div class="guess"> </div>
@@ -115,8 +137,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">7</div>
                     <div class="guess"> </div>
@@ -130,8 +150,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">6</div>
                     <div class="guess"> </div>
@@ -145,8 +163,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">5</div>
                     <div class="guess"> </div>
@@ -160,8 +176,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">4</div>
                     <div class="guess"> </div>
@@ -175,8 +189,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">3</div>
                     <div class="guess"> </div>
@@ -190,8 +202,6 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">2</div>
                     <div class="guess"> </div>
@@ -205,19 +215,17 @@
                         <div class="hint"></div>
                     </div>
                 </div>
-            </div>
-            <div class="guess-area">
                 <div class="guess-row">
                     <div class="guess-row-number">1</div>
-                    <div class="guess"> </div>
-                    <div class="guess"> </div>
-                    <div class="guess"> </div>
-                    <div class="guess"> </div>
+                    <div class="guess" style="background-color: blue;"> </div>
+                    <div class="guess" style="background-color: red;"> </div>
+                    <div class="guess" style="background-color: yellow;"> </div>
+                    <div class="guess" style="background-color: green;"> </div>
                     <div class="hint-box">
-                        <div class="hint"></div>
-                        <div class="hint"></div>
-                        <div class="hint"></div>
-                        <div class="hint"></div>
+                        <div class="hint" style="background-color: black;"></div>
+                        <div class="hint" style="background-color: black;"></div>
+                        <div class="hint" style="background-color: white;"></div>
+                        <div class="hint" style="background-color: white;"></div>
                     </div>
                 </div>
             </div>
